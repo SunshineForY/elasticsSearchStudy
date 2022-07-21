@@ -85,6 +85,7 @@ public class esIndexDocSomeQuery {
 
         System.out.println(searchResponse.getTook());
         for (SearchHit hit : searchResponse.getHits()) {
+
             System.out.println(hit.getSourceAsString());
         }
         restHighLevelClient.close();
